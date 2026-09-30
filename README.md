@@ -46,6 +46,7 @@ Necesito:
 <ul>
 	<li>i (interactive): Mantiene abierta la entrada estándar (STDIN) para que se puedan escribir comandos</li>
 	<li>t (tty): Asigna una consola/terminal virtual para ver la salida formateada</li>
+	<li> /bin/sh : Intérprete de comandos</li>
 </ul>
 
 ## 4. Desde dentro, mira qué IP tiene y si puede hacer ping a google.com.
