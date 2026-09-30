@@ -72,15 +72,13 @@ ping google.com
 
 ### Ping por IP
 
-![paso1](capturas/paso5.png) 
-![paso1](capturas/paso5-1.png)
+![paso5](capturas/paso5.png) ![paso5.1](capturas/paso5-1.png)
 
 Funciona correctamente y con 0% de pérdida de paquetes. Ambos contenedores comparten el mismo puente de red virtual (bridge) en la interfaz mired, lo que les permite enrutar paquetes IP directamente entre sí dentro del mismo rango de red. 
 
 ### Ping por nombre
 
-![paso1](capturas/paso5-2.png) 
-![paso1](capturas/paso5-3.png) 
+![paso5.2](capturas/paso5-2.png) ![paso5.3](capturas/pasos5-3.png) 
 
 Funciona correctamente debido a la resolución de nombres por DNS integrado de Docker. Como ambos contenedores fueron creados dentro de la red personalizada mired, Docker habilita un servidor DNS interno (escuchando en 127.0.0.11). Al escribir ping dam_alp2, la consulta DNS devuelve primero la IP asignada (172.19.0.3) y acto seguido envía los paquetes ICMP a esa dirección. 
 
